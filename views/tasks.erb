@@ -1,28 +1,30 @@
 
-<form action="/tasks" method="post" class="add-form">
-  <div>
-    <label for="name">New task</label>
-    <input type="text" name="name">
-  </div>
-  <div>
-  <fieldset>
-    <label><input type="radio" name="radio" value="P1" /> High</label>
-    <label><input type="radio" name="radio" value="P2" /> Medium</label>
-    <label><input type="radio" name="radio" value="P3" /> Low</label>
-  </fieldset>
-  <%# <div class="label-container">
-    <p class="label">Work</p>
-    <p class="label">Private</p>
-    <p class="label">Hobby</p>
-  </div> %>
-  </div>
-  <div class ="submit-container">
-      <p class="cancel-btn">Cancel</p>
-      <input type="submit" value="Add task" class="create-btn">
-  </div>
-</form>
+<div class="overlay hidden">
+  <form action="/tasks" method="post" class="overlay-form">
+    <div>
+      <label for="name">New task</label>
+      <input type="text" name="name">
+    </div>
+    <div>
+    <fieldset>
+      <label><input type="radio" name="radio" value="P1" /> High</label>
+      <label><input type="radio" name="radio" value="P2" /> Medium</label>
+      <label><input type="radio" name="radio" value="P3" /> Low</label>
+    </fieldset>
+    <%# <div class="label-container">
+      <p class="label">Work</p>
+      <p class="label">Private</p>
+      <p class="label">Hobby</p>
+    </div> %>
+    </div>
+    <div class ="submit-container">
+        <p class="btn cancel" id="close-overlay">Cancel</p>
+        <input type="submit" value="Add task" class="btn create">
+    </div>
+  </form>
+</div>
 
-<button class="add-task"><i class="fa fa-solid fa fa-plus"></i></button>
+<button class="round-btn"><i class="fa fa-solid fa fa-plus"></i></button>
 
 <div class="task-container">
   <% @tasks.each_with_index do |task, index| %>

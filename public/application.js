@@ -18,3 +18,12 @@ document.querySelectorAll(".checkbox").forEach((checkbox) => {
     selectedTask.children[0].children[0].classList.toggle("done");
   })
 })
+
+// Hide / show form
+document.querySelector(".round-btn").addEventListener("click", () => {
+  document.querySelector(".overlay").classList.remove("hidden");
+})
+
+document.querySelector("#close-overlay").addEventListener("click", () => {
+  document.querySelector(".overlay").classList.add("hidden");
+})

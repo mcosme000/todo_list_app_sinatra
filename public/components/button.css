@@ -1,0 +1,26 @@
+
+.round-btn {
+  padding: 15px 22px;
+  border-radius: 50px;
+  background: rgb(21, 202, 138);
+  border: none;
+}
+
+.btn-small {
+  padding: 10px 10px;
+  border: none;
+  background: none;
+}
+
+.submit-container .btn{
+  margin-left: 10px;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.create {
+  background: rgb(21, 202, 138);
+  color: #fff;
+}

@@ -1,5 +1,8 @@
 
 @import url("/components/task.css");
+@import url("/components/form.css");
+@import url("/components/button.css");
+@import url("/components/overlay.css");
 
 * {
   padding: 0;
@@ -8,9 +11,19 @@
 }
 
 body {
-  height: 100vh;
   display: grid;
   align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 0px;
 }
 
 ul {
