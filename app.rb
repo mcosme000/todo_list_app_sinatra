@@ -29,6 +29,9 @@ post '/tasks' do
   redirect to('/')
 end
 
-get '/delete-task' do
-  erb :delete_task
+get('/tasks/:id/delete') do
+  task = Task.find(params[:id])
+  task.destroy
+  @tasks = Task.all
+  redirect to('/')
 end
